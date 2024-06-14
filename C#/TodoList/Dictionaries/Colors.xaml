@@ -1,0 +1,62 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <!--App Accent Dark-->
+    <SolidColorBrush x:Key="AccentDark" Color = "#330033" />
+    <SolidColorBrush x:Key="AccentDarkOver" Color = "#550055" />
+    <SolidColorBrush x:Key="AccentDarkClick" Color = "#880088" />
+    <!--Task List Background-->
+    <SolidColorBrush x:Key="TaskListBackground" Color = "LightGray" />
+    <!--Task View Background-->
+    <SolidColorBrush x:Key="TaskViewBackground" Color = "#ffffff" />
+    <!--Task Status Background-->
+    <SolidColorBrush x:Key="TaskStatusBackground" Color = "LightGray" />
+    <!--Default Text -->
+    <SolidColorBrush x:Key="DefaultText" Color = "#000000" />
+    <!--On Accent-->
+    <SolidColorBrush x:Key="OnAccent" Color="#ffffff" />
+    <!--Placeholder Text Colour-->
+    <SolidColorBrush x:Key="PlaceholderText" Color="Gray" />
+    <SolidColorBrush x:Key="PlaceholderBorder" Color="LightGray" />
+
+    <!--Button Colours-->
+    <SolidColorBrush x:Key="Button.Complete" Color="Blue" />
+    <SolidColorBrush x:Key="Button.Complete.Over" Color="LightBlue" />
+    <SolidColorBrush x:Key="Button.Complete.Click" Color="White" />
+    <SolidColorBrush x:Key="Button.Edit" Color="Green" />
+    <SolidColorBrush x:Key="Button.Edit.Over" Color="PaleGreen" />
+    <SolidColorBrush x:Key="Button.Edit.Click" Color="White" />
+    <SolidColorBrush x:Key="Button.Delete" Color="Red" />
+    <SolidColorBrush x:Key="Button.Delete.Over" Color="#990000" />
+    <SolidColorBrush x:Key="Button.Delete.Click" Color="White" />
+
+
+
+    <!-- Borders-->
+    <SolidColorBrush x:Key="Borders" Color="Gray" />
+
+    <!--Importance Colours-->
+    <SolidColorBrush x:Key="Importance-Low" Color="LightBlue" />
+    <SolidColorBrush x:Key="Importance-Med" Color="LightGreen" />
+    <SolidColorBrush x:Key="Importance-High" Color="Orange" />
+    <SolidColorBrush x:Key="Importance-Crit" Color="Red" />
+
+    <!-- Task Progress-->
+    <SolidColorBrush x:Key="Progress_inProgress" Color="Green"/>
+    <SolidColorBrush x:Key="Progress_Completed" Color="Blue"  />
+    <SolidColorBrush x:Key="Progress_NotStarted" Color="White"/>
+    <SolidColorBrush x:Key="Progress_Late" Color="Red" />
+    <SolidColorBrush x:Key="Progress_Archived" Color="Gray" />
+    <SolidColorBrush x:Key="Progress_Deleted" Color="Yellow" />
+
+    <!--Nev Buttons-->
+    <SolidColorBrush x:Key="Nev.Default" Color="Transparent"/>
+    <SolidColorBrush x:Key="Nev.Over" Color="#550055"/>
+    <SolidColorBrush x:Key="Nev.Click" Color="#880088"/>
+
+
+    <SolidColorBrush x:Key="TaskListUCText" Color="DarkGray"/>
+    <SolidColorBrush x:Key="TaskListTitle" Color="#330033"/>
+
+    <SolidColorBrush x:Key="NewTaskInputBG" Color="White"/>
+
+</ResourceDictionary>

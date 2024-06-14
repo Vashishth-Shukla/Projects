@@ -1,0 +1,46 @@
+﻿<UserControl x:Class="TodoList.Views.TaskListItem"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:TodoList.Views">
+             <!--mc:Ignorable="d" 
+             d:DesignHeight="145" d:DesignWidth="435">-->
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="38"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="40"/>
+        </Grid.RowDefinitions>
+        <!--Title-->
+        <TextBlock Text="Title" 
+                   Style="{StaticResource Title}"
+                   Margin="20 0"
+                   VerticalAlignment="Center"
+                   Foreground="{StaticResource TaskListTitle}"/>
+        <!--Importance Badge-->
+        <!--<Border CornerRadius="3"
+                Background="{StaticResource PlaceholderBorder}"
+                Padding="40 0"
+                Height="23"
+                HorizontalAlignment="Right"
+                Margin="0 0 20 0">
+            <TextBlock Text="Category" Foreground="{StaticResource PlaceholderText}"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"/>
+        </Border>-->
+        <!--Description-->
+        <TextBlock Text="Some description ... "
+                   TextWrapping="Wrap"
+                   Grid.Row="1"
+                   Margin="20 0"
+                   Foreground="{StaticResource TaskListUCText}"/>
+        <!--Due Date-->
+        <TextBlock Text="Due: 10/10/2024 "
+                  TextWrapping="Wrap"
+                  Grid.Row="2"
+                   VerticalAlignment="Center"
+                  Margin="20 5 0 0"
+                   Foreground="{StaticResource TaskListUCText}"/>
+    </Grid>
+</UserControl>
