@@ -32,7 +32,7 @@ namespace AreYouDumb
         {
             if (_firstClick)
             {
-                tbName.Text = "Well! No Worries. At lease you know! ;P";
+                tbName.Text = "Well! No Worries. At least you know! ;P";
                 YesButton.Content = "Try Again!";
             }
             else
