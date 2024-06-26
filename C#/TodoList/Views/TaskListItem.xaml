@@ -3,9 +3,10 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:TodoList.Views">
-             <!--mc:Ignorable="d" 
-             d:DesignHeight="145" d:DesignWidth="435">-->
+             xmlns:local="clr-namespace:TodoList.Views" 
+             xmlns:viewmodels="clr-namespace:TodoList.ViewModels" d:DataContext="{d:DesignInstance Type=viewmodels:TaskViewModel}"
+             mc:Ignorable="d" 
+             d:DesignHeight="145" d:DesignWidth="435">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="38"/>
@@ -13,7 +14,7 @@
             <RowDefinition Height="40"/>
         </Grid.RowDefinitions>
         <!--Title-->
-        <TextBlock Text="Title" 
+        <TextBlock Text="{Binding Title}" 
                    Style="{StaticResource Title}"
                    Margin="20 0"
                    VerticalAlignment="Center"
@@ -30,17 +31,17 @@
                        HorizontalAlignment="Center"/>
         </Border>-->
         <!--Description-->
-        <TextBlock Text="Some description ... "
+        <TextBlock Text="{Binding Description}"
                    TextWrapping="Wrap"
                    Grid.Row="1"
                    Margin="20 0"
                    Foreground="{StaticResource TaskListUCText}"/>
         <!--Due Date-->
-        <TextBlock Text="Due: 10/10/2024 "
+        <TextBlock Text="{Binding DueDate}"
                   TextWrapping="Wrap"
                   Grid.Row="2"
-                   VerticalAlignment="Center"
+                  VerticalAlignment="Center"
                   Margin="20 5 0 0"
-                   Foreground="{StaticResource TaskListUCText}"/>
+                  Foreground="{StaticResource TaskListUCText}"/>
     </Grid>
 </UserControl>

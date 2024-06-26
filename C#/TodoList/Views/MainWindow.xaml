@@ -4,7 +4,8 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:vm="clr-namespace:TodoList.ViewModels"
-        xmlns:local="clr-namespace:TodoList"
+        xmlns:local="clr-namespace:TodoList" 
+        xmlns:local1="clr-namespace:TodoList.Views"
         mc:Ignorable="d"
         Title="Todo List" Height="850" Width="1280"
         MinHeight="500" MinWidth="1100"
@@ -98,8 +99,13 @@
             <ListView Grid.Row="1"
                       Background="Transparent"
                       Margin="0 20 0 0 "
-                      BorderBrush="Transparent" >
-
+                      BorderBrush="Transparent"
+                      ItemsSource="{Binding Tasks}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <local1:TaskListItem/>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
             </ListView>
         </Grid>
         <!--Task Viewer-->
@@ -118,7 +124,7 @@
                     <RowDefinition Height="30" />
                 </Grid.RowDefinitions>
                 <!--Task Title-->
-                <TextBlock Text="Task Title" 
+                <TextBlock Text="{Binding Task.Title}" 
                     Style="{StaticResource Title}" 
                     VerticalAlignment="Center"/>
                 <!--Importance Badge-->
@@ -139,14 +145,14 @@
                        VerticalScrollBarVisibility="Auto"
                        HorizontalScrollBarVisibility="Disabled">
                     <!--Description-->
-                    <TextBlock Text="This is a short description."
+                    <TextBlock Text="{Binding Task.Description}"
                     FontSize="16"
                     Foreground="{StaticResource PlaceholderText}"
                     Margin="0 20"/>
                 </ScrollViewer>
 
                 <!--Due Date-->
-                <TextBlock Text="Due: 10/10/2024"
+                <TextBlock Text="{Binding Task.DueDate}"
                     Background="{StaticResource AccentDark}"
                     Padding="20 3"
                     VerticalAlignment="Center"

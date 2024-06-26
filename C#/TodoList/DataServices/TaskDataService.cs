@@ -42,7 +42,7 @@ namespace TodoList.DataServices
                 File.WriteAllText(_filePath, JsonConvert.SerializeObject(new List<Task>()));
             }
             // debug
-            Process.Start(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), folderName));
+            // Process.Start(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), folderName));
         }
 
         public List<Task> LoadTasks()
