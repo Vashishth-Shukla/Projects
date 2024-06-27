@@ -1,0 +1,28 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <!--App theme -->
+    <SolidColorBrush x:Key="AppBackgroundColor" Color="#c1ddfe" />
+    <SolidColorBrush x:Key="InputTextBoxColor" Color="#5fa8ff" />
+    <SolidColorBrush x:Key="InputTextBoxColor.Over" Color="#ffffff" />
+
+    <!-- Borders-->
+    <SolidColorBrush x:Key="Borders" Color="#2e8eff" />
+
+
+    <!--Button Colors-->
+    <SolidColorBrush x:Key="Button.Text" Color="White" />
+    <!--Run Button-->
+    <SolidColorBrush x:Key="Button.Run" Color="#00306a" />
+    <SolidColorBrush x:Key="Button.Run.Over" Color="#0074fc" />
+    <SolidColorBrush x:Key="Button.Run.Click" Color="LightBlue" />
+    <!--Reset Button-->
+    <SolidColorBrush x:Key="Button.Reset" Color="#c42812" />
+    <SolidColorBrush x:Key="Button.Reset.Over" Color="#ec4931" />
+    <SolidColorBrush x:Key="Button.Reset.click" Color="#f28372" />
+    
+    <!--Statusbar-->
+    <SolidColorBrush x:Key="AppStatusBarColor" Color="#001a39" />
+    <SolidColorBrush x:Key="AppStatusBarTextColor" Color="#ffffff" />
+
+
+</ResourceDictionary>

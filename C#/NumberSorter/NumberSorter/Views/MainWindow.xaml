@@ -1,0 +1,230 @@
+﻿<Window x:Class="NumberSorter.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NumberSorter"
+        mc:Ignorable="d"
+        Title="Number Sorter" Height="450" Width="600"
+        WindowStartupLocation="CenterScreen" Background="{StaticResource AppBackgroundColor}">
+    <!--Opening Animaiton-->
+    <Window.Resources>
+        <Storyboard x:Key="SlidoOnLoad">
+            <DoubleAnimation Storyboard.TargetProperty="Opacity"
+                         From="0.0" To="1.0" Duration="0:0:1" />
+            <ThicknessAnimation Storyboard.TargetProperty="Margin"
+                            From="0,100,0,0" To="0,0,0,0" Duration="0:0:1">
+                <ThicknessAnimation.EasingFunction>
+                    <CubicEase EasingMode="EaseOut" />
+                </ThicknessAnimation.EasingFunction>
+            </ThicknessAnimation>
+        </Storyboard>
+    </Window.Resources>
+    <!--Main Grid-->
+    <Grid Opacity="1">
+        <Grid.Triggers>
+            <EventTrigger RoutedEvent="FrameworkElement.Loaded">
+                <BeginStoryboard Storyboard="{StaticResource SlidoOnLoad}" />
+            </EventTrigger>
+        </Grid.Triggers>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1.5*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="30" />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="2*" />
+            <ColumnDefinition Width="1*" />
+        </Grid.ColumnDefinitions>
+        <!--Title-->
+        <TextBlock 
+            Text="Number Sorter"
+            Grid.Row="0"
+            Grid.Column="0"
+            Style="{StaticResource RowText}"
+            TextAlignment="Center"
+            FontSize="20"/>
+        <TextBlock 
+            Text="Add the numbers in the textbox 'RawList' in the form 2,5,6,7,8.
+            The numbers must be unique, between 1-20 (including). 
+            The count must not be greater than 20."
+            Grid.Row="0"
+            Grid.Column="1"
+            TextWrapping="Wrap"
+            FontSize="14"
+            TextAlignment="Left" 
+            Margin="5"/>
+
+
+        <!--RawList input and text box-->
+        <TextBlock 
+            Text="RawList :"
+            Grid.Row="1"
+            Grid.Column="0"
+            Style="{StaticResource RowText}"/>
+        <Grid 
+            Grid.Row="1"
+            Grid.Column="1"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Stretch"
+            Margin="10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <TextBlock 
+                x:Name="RawList"
+                Text="[ 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20 ] "
+                Grid.Column="0"
+                VerticalAlignment="Center"
+                TextAlignment="Left"
+                Margin="10 0 10 0"
+                FontSize="14"
+                Cursor="IBeam" 
+                IsEnabled="False"/>
+            <Button 
+                x:Name="AddButton"
+                Grid.Column="1"
+                Content="Add X"
+                Style="{StaticResource RunButton}"
+                HorizontalAlignment="Right"/>
+        </Grid>
+
+
+
+
+
+        <!--N-->
+        <TextBlock 
+            Text="Times you wish to short the list :"
+            Grid.Row="2"
+            Grid.Column="0"
+            TextWrapping="WrapWithOverflow"
+            Style="{StaticResource RowText}"/>
+        <TextBox 
+            x:Name="N"
+            Grid.Row="2"
+            Grid.Column="1"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Left"
+            Text="10000" 
+            Width="100"
+            TextAlignment="Right"
+            Margin="10 0 0 0"
+            FontSize="14"
+            Cursor="IBeam"
+            IsEnabled="False" />
+        
+        <!--Buttons-->
+        <StackPanel 
+            Grid.Row="3"
+            Grid.ColumnSpan="2"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Right"
+            Orientation="Horizontal">
+            <Button 
+                x:Name="RunButton"
+                Content="Run"
+                Grid.Column="1"
+                Style="{StaticResource RunButton}"
+                Margin="0 0 10 0"
+                IsEnabled="False"/>
+
+            <Button 
+                x:Name="StopButton"
+                Content="Stop"
+                Grid.Column="1"
+                Style="{StaticResource ResetButton}"
+                Margin="0 0 10 0"
+                IsEnabled="False"/>
+        </StackPanel>
+        
+        <!--Time-->
+        <TextBlock 
+            Text="Time Taken:"
+            Grid.Row="4"
+            Grid.Column="0"
+            TextWrapping="WrapWithOverflow"
+            Style="{StaticResource RowText}"/>
+        <TextBlock 
+            x:Name="TimeTaken" 
+            Text="hh:mm:ss.mmm"
+            Grid.Row="4"
+            Grid.Column="1"
+            FontWeight="Normal"
+            Style="{StaticResource RowText}"
+            HorizontalAlignment="Left"/>
+        
+        <!--After Calculaiton-->
+        <!--Set Display List Number-->
+        <TextBlock 
+            Text="Display List Number :"
+            Grid.Row="5"
+            Grid.Column="0"
+            TextWrapping="WrapWithOverflow"
+            Style="{StaticResource RowText}"/>
+        <TextBox 
+            x:Name="ShowList"
+            Grid.Row="5"
+            Grid.Column="1"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Left"
+            Text="500" 
+            Width="100"
+            TextAlignment="Right"
+            Margin="10 0 0 0"
+            FontSize="14"
+            Cursor="IBeam"
+            IsEnabled="False" />
+        <!--Nth List-->
+        <TextBlock 
+            Text="Nth List :"
+            Grid.Row="6"
+            Grid.Column="0"
+            TextWrapping="WrapWithOverflow"
+            Style="{StaticResource RowText}"/>
+        <TextBlock 
+            Text="number 1, number 2, number 3, number 3, number 3, number 3, number 3, number 3, number 3, number 3, number 3, number 3, number 3, number 3, number 3, number 3, number 3, number 3, number 3, number 3"
+            Grid.Row="6"
+            TextAlignment="Left"
+            Grid.Column="1"
+            TextWrapping="WrapWithOverflow"
+            Style="{StaticResource RowText}"
+            HorizontalAlignment="Stretch"
+            FontWeight="Normal" />
+        
+        <!--Reset Button-->
+        <Button 
+            x:Name="ResetButton"
+            Content="Reset"
+            Grid.Row="7"                
+            Grid.Column="1"
+            Style="{StaticResource ResetButton}"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Right"
+            Margin="0 0 10 0"
+            IsEnabled="False"/>
+
+        <!--Status Bar-->
+        <Rectangle 
+            Fill="{StaticResource AppStatusBarColor}"
+            Grid.Row="8"
+            Grid.ColumnSpan="2"/>
+        <TextBlock 
+            x:Name="Status"
+            Grid.Row="8"
+            Grid.ColumnSpan="3"
+            Margin="10 0 0 0"
+            Style="{StaticResource StatusText}"
+            Text="{Binding StatusMessage}"/>
+    </Grid>
+</Window>
