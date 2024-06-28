@@ -1,0 +1,238 @@
+09:35:39| Verbos set to 'True'
+09:35:39| Created SProfile 1
+09:35:39| Created Element 1
+09:35:39| Found Node 2: x =   -47.5000, y =    47.5000
+09:35:39| Created Element 2
+09:35:39| Found Node 3: x =   -47.5000, y =   -47.5000
+09:35:39| Created Element 3
+09:35:39| Found Node 4: x =    47.5000, y =   -47.5000
+09:35:39| Found Node 1: x =    47.5000, y =    47.5000
+09:35:39| Created Element 4
+09:35:39| Created LProfile 1
+09:35:39| Created Element 5
+09:35:39| Found Node 6: x =   -52.0000, y =    48.0000
+09:35:39| Created Element 6
+09:35:39| Created OProfile 1
+09:35:39| Created Element 7
+09:35:39| Found Node 9: x =    11.4250, y =   -54.3613
+09:35:39| Created Element 8
+09:35:39| Found Node 10: x =    19.7887, y =   -62.7250
+09:35:39| Created Element 9
+09:35:39| Found Node 11: x =    22.8500, y =   -74.1500
+09:35:39| Created Element 10
+09:35:39| Found Node 12: x =    19.7887, y =   -85.5750
+09:35:39| Created Element 11
+09:35:39| Found Node 13: x =    11.4250, y =   -93.9387
+09:35:39| Created Element 12
+09:35:39| Found Node 14: x =     0.0000, y =   -97.0000
+09:35:39| Created Element 13
+09:35:39| Found Node 15: x =   -11.4250, y =   -93.9387
+09:35:39| Created Element 14
+09:35:39| Found Node 16: x =   -19.7887, y =   -85.5750
+09:35:39| Created Element 15
+09:35:39| Found Node 17: x =   -22.8500, y =   -74.1500
+09:35:39| Created Element 16
+09:35:39| Found Node 18: x =   -19.7887, y =   -62.7250
+09:35:39| Created Element 17
+09:35:39| Found Node 19: x =   -11.4250, y =   -54.3613
+09:35:39| Created Element 18
+09:35:39| Created LProfile 2
+09:35:39| Created Element 19
+09:35:39| Found Node 22: x =    52.0000, y =    48.0000
+09:35:39| Created Element 20
+09:35:39| ---- Begin Profile Data Output ----
+09:35:39| Profile Name: MyBeamCrossSection
+09:35:39|   Area...................................A:  2877.03
+09:35:39|   Static Moments in User-Coordinates.Sx,Sy: -7395.91     0.00
+09:35:39|   Moment of Inertia in UC - ...Ixx,Iyy,Ixy: 5789996.94 4978669.55     0.00
+09:35:39|   Center of Gravity (CG) Coordinates.ex,ey:     0.00    -2.57
+09:35:39|   Shifted MoI in CG coord-sys. Ixx,Iyy,Ixy: 5770984.48 4978669.55     0.00
+09:35:39|   MoI principle values .........Ieta,Izeta: 5770984.48 4978669.55
+09:35:39|   Rotation angle..........................:    90.00 °
+09:35:39| > Element 1: t = 5.00 mm, l = 95.00 mm
+09:35:39|    Created Node 1: x =    47.5000, y =    47.5000
+09:35:39|    Created Node 2: x =   -47.5000, y =    47.5000
+09:35:39|    A................:     475.00 mm^2
+09:35:39|    Sx and Sy........:   22562.50       0.00 mm^3
+09:35:39|    Ixx, Iyy and Ixy.: 1071718.75  357239.58      -0.00 mm^4
+09:35:39| > Element 2: t = 5.00 mm, l = 95.00 mm
+09:35:39|    Created Node 2: x =   -47.5000, y =    47.5000
+09:35:39|    Created Node 3: x =   -47.5000, y =   -47.5000
+09:35:39|    A................:     475.00 mm^2
+09:35:39|    Sx and Sy........:       0.00  -22562.50 mm^3
+09:35:39|    Ixx, Iyy and Ixy.:  357239.58 1071718.75       0.00 mm^4
+09:35:39| > Element 3: t = 5.00 mm, l = 95.00 mm
+09:35:39|    Created Node 3: x =   -47.5000, y =   -47.5000
+09:35:39|    Created Node 4: x =    47.5000, y =   -47.5000
+09:35:39|    A................:     475.00 mm^2
+09:35:39|    Sx and Sy........:  -22562.50       0.00 mm^3
+09:35:39|    Ixx, Iyy and Ixy.: 1071718.75  357239.58      -0.00 mm^4
+09:35:39| > Element 4: t = 5.00 mm, l = 95.00 mm
+09:35:39|    Created Node 4: x =    47.5000, y =   -47.5000
+09:35:39|    Created Node 1: x =    47.5000, y =    47.5000
+09:35:39|    A................:     475.00 mm^2
+09:35:39|    Sx and Sy........:       0.00   22562.50 mm^3
+09:35:39|    Ixx, Iyy and Ixy.:  357239.58 1071718.75      -0.00 mm^4
+09:35:39| > Element 5: t = 4.00 mm, l = 28.00 mm
+09:35:39|    Created Node 5: x =   -80.0000, y =    48.0000
+09:35:39|    Created Node 6: x =   -52.0000, y =    48.0000
+09:35:39|    A................:     112.00 mm^2
+09:35:39|    Sx and Sy........:    5376.00   -7392.00 mm^3
+09:35:39|    Ixx, Iyy and Ixy.:  258048.00  495189.33  354816.00 mm^4
+09:35:39| > Element 6: t = 4.00 mm, l = 48.00 mm
+09:35:39|    Created Node 6: x =   -52.0000, y =    48.0000
+09:35:39|    Created Node 7: x =   -52.0000, y =     0.0000
+09:35:39|    A................:     192.00 mm^2
+09:35:39|    Sx and Sy........:    4608.00   -9984.00 mm^3
+09:35:39|    Ixx, Iyy and Ixy.:  147456.00  519168.00  239616.00 mm^4
+09:35:39| > Element 7: t = 2.60 mm, l = 11.83 mm
+09:35:39|    Created Node 8: x =     0.0000, y =   -51.3000
+09:35:39|    Created Node 9: x =    11.4250, y =   -54.3613
+09:35:39|    A................:      30.75 mm^2
+09:35:39|    Sx and Sy........:   -1624.69     175.68 mm^3
+09:35:39|    Ixx, Iyy and Ixy.:   85857.72    1338.06    9370.70 mm^4
+09:35:39| > Element 8: t = 2.60 mm, l = 11.83 mm
+09:35:39|    Created Node 9: x =    11.4250, y =   -54.3613
+09:35:39|    Created Node 10: x =    19.7887, y =   -62.7250
+09:35:39|    A................:      30.75 mm^2
+09:35:39|    Sx and Sy........:   -1800.37     479.96 mm^3
+09:35:39|    Ixx, Iyy and Ixy.:  105578.66    7669.85   28277.36 mm^4
+09:35:39| > Element 9: t = 2.60 mm, l = 11.83 mm
+09:35:39|    Created Node 10: x =    19.7887, y =   -62.7250
+09:35:39|    Created Node 11: x =    22.8500, y =   -74.1500
+09:35:39|    A................:      30.75 mm^2
+09:35:39|    Sx and Sy........:   -2104.65     655.63 mm^3
+09:35:39|    Ixx, Iyy and Ixy.:  144371.51   14001.64   44959.39 mm^4
+09:35:39| > Element 10: t = 2.60 mm, l = 11.83 mm
+09:35:39|    Created Node 11: x =    22.8500, y =   -74.1500
+09:35:39|    Created Node 12: x =    19.7887, y =   -85.5750
+09:35:39|    A................:      30.75 mm^2
+09:35:39|    Sx and Sy........:   -2456.00     655.63 mm^3
+09:35:39|    Ixx, Iyy and Ixy.:  196476.96   14001.64   52270.70 mm^4
+09:35:39| > Element 11: t = 2.60 mm, l = 11.83 mm
+09:35:39|    Created Node 12: x =    19.7887, y =   -85.5750
+09:35:39|    Created Node 13: x =    11.4250, y =   -93.9387
+09:35:39|    A................:      30.75 mm^2
+09:35:39|    Sx and Sy........:   -2760.28     479.96 mm^3
+09:35:39|    Ixx, Iyy and Ixy.:  247933.39    7669.85   42900.00 mm^4
+09:35:39| > Element 12: t = 2.60 mm, l = 11.83 mm
+09:35:39|    Created Node 13: x =    11.4250, y =   -93.9387
+09:35:39|    Created Node 14: x =     0.0000, y =   -97.0000
+09:35:39|    A................:      30.75 mm^2
+09:35:39|    Sx and Sy........:   -2935.96     175.68 mm^3
+09:35:39|    Ixx, Iyy and Ixy.:  280317.90    1338.06   16682.02 mm^4
+09:35:39| > Element 13: t = 2.60 mm, l = 11.83 mm
+09:35:39|    Created Node 14: x =     0.0000, y =   -97.0000
+09:35:39|    Created Node 15: x =   -11.4250, y =   -93.9387
+09:35:39|    A................:      30.75 mm^2
+09:35:39|    Sx and Sy........:   -2935.96    -175.68 mm^3
+09:35:39|    Ixx, Iyy and Ixy.:  280317.90    1338.06  -16682.02 mm^4
+09:35:39| > Element 14: t = 2.60 mm, l = 11.83 mm
+09:35:39|    Created Node 15: x =   -11.4250, y =   -93.9387
+09:35:39|    Created Node 16: x =   -19.7887, y =   -85.5750
+09:35:39|    A................:      30.75 mm^2
+09:35:39|    Sx and Sy........:   -2760.28    -479.96 mm^3
+09:35:39|    Ixx, Iyy and Ixy.:  247933.39    7669.85  -42900.00 mm^4
+09:35:39| > Element 15: t = 2.60 mm, l = 11.83 mm
+09:35:39|    Created Node 16: x =   -19.7887, y =   -85.5750
+09:35:39|    Created Node 17: x =   -22.8500, y =   -74.1500
+09:35:39|    A................:      30.75 mm^2
+09:35:39|    Sx and Sy........:   -2456.00    -655.63 mm^3
+09:35:39|    Ixx, Iyy and Ixy.:  196476.96   14001.64  -52270.70 mm^4
+09:35:39| > Element 16: t = 2.60 mm, l = 11.83 mm
+09:35:39|    Created Node 17: x =   -22.8500, y =   -74.1500
+09:35:39|    Created Node 18: x =   -19.7887, y =   -62.7250
+09:35:39|    A................:      30.75 mm^2
+09:35:39|    Sx and Sy........:   -2104.65    -655.63 mm^3
+09:35:39|    Ixx, Iyy and Ixy.:  144371.51   14001.64  -44959.39 mm^4
+09:35:39| > Element 17: t = 2.60 mm, l = 11.83 mm
+09:35:39|    Created Node 18: x =   -19.7887, y =   -62.7250
+09:35:39|    Created Node 19: x =   -11.4250, y =   -54.3613
+09:35:39|    A................:      30.75 mm^2
+09:35:39|    Sx and Sy........:   -1800.37    -479.96 mm^3
+09:35:39|    Ixx, Iyy and Ixy.:  105578.66    7669.85  -28277.36 mm^4
+09:35:39| > Element 18: t = 2.60 mm, l = 11.83 mm
+09:35:39|    Created Node 19: x =   -11.4250, y =   -54.3613
+09:35:39|    Created Node 20: x =    -0.0000, y =   -51.3000
+09:35:39|    A................:      30.75 mm^2
+09:35:39|    Sx and Sy........:   -1624.69    -175.68 mm^3
+09:35:39|    Ixx, Iyy and Ixy.:   85857.72    1338.06   -9370.70 mm^4
+09:35:39| > Element 19: t = 4.00 mm, l = 28.00 mm
+09:35:39|    Created Node 21: x =    80.0000, y =    48.0000
+09:35:39|    Created Node 22: x =    52.0000, y =    48.0000
+09:35:39|    A................:     112.00 mm^2
+09:35:39|    Sx and Sy........:    5376.00    7392.00 mm^3
+09:35:39|    Ixx, Iyy and Ixy.:  258048.00  495189.33 -354816.00 mm^4
+09:35:39| > Element 20: t = 4.00 mm, l = 48.00 mm
+09:35:39|    Created Node 22: x =    52.0000, y =    48.0000
+09:35:39|    Created Node 23: x =    52.0000, y =     0.0000
+09:35:39|    A................:     192.00 mm^2
+09:35:39|    Sx and Sy........:    4608.00    9984.00 mm^3
+09:35:39|    Ixx, Iyy and Ixy.:  147456.00  519168.00 -239616.00 mm^4
+09:35:39| ---- End Profile Data Output ----
+09:35:45| Profile.view(): pylab imported!
+09:45:50| deleting Profile 1.
+09:45:50| deleting SProfile 1.
+09:45:50| deleting Element 4.
+09:45:50| deleting Node 1.
+09:45:50| deleting Node 4.
+09:45:50| deleting Element 3.
+09:45:50| deleting Node 4.
+09:45:50| deleting Node 3.
+09:45:50| deleting Element 2.
+09:45:50| deleting Node 3.
+09:45:50| deleting Node 2.
+09:45:50| deleting Element 1.
+09:45:50| deleting Node 2.
+09:45:50| deleting Node 1.
+09:45:50| deleting LProfile 1.
+09:45:50| deleting Element 6.
+09:45:50| deleting Node 7.
+09:45:50| deleting Node 6.
+09:45:50| deleting Element 5.
+09:45:50| deleting Node 6.
+09:45:50| deleting Node 5.
+09:45:50| deleting OProfile 1.
+09:45:50| deleting Element 18.
+09:45:50| deleting Node 20.
+09:45:50| deleting Node 19.
+09:45:50| deleting Element 17.
+09:45:50| deleting Node 19.
+09:45:50| deleting Node 18.
+09:45:50| deleting Element 16.
+09:45:50| deleting Node 18.
+09:45:50| deleting Node 17.
+09:45:50| deleting Element 15.
+09:45:50| deleting Node 17.
+09:45:50| deleting Node 16.
+09:45:50| deleting Element 14.
+09:45:50| deleting Node 16.
+09:45:50| deleting Node 15.
+09:45:50| deleting Element 13.
+09:45:50| deleting Node 15.
+09:45:50| deleting Node 14.
+09:45:50| deleting Element 12.
+09:45:50| deleting Node 14.
+09:45:50| deleting Node 13.
+09:45:50| deleting Element 11.
+09:45:50| deleting Node 13.
+09:45:50| deleting Node 12.
+09:45:50| deleting Element 10.
+09:45:50| deleting Node 12.
+09:45:50| deleting Node 11.
+09:45:50| deleting Element 9.
+09:45:50| deleting Node 11.
+09:45:50| deleting Node 10.
+09:45:50| deleting Element 8.
+09:45:50| deleting Node 10.
+09:45:50| deleting Node 9.
+09:45:50| deleting Element 7.
+09:45:50| deleting Node 9.
+09:45:50| deleting Node 8.
+09:45:50| deleting LProfile 2.
+09:45:50| deleting Element 20.
+09:45:50| deleting Node 23.
+09:45:50| deleting Node 22.
+09:45:50| deleting Element 19.
+09:45:50| deleting Node 22.
+09:45:50| deleting Node 21.
