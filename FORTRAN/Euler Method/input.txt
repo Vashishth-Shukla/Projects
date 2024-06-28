@@ -1,0 +1,61 @@
+###############################################################################
+#									      #
+# this is the input file for Euler Method				      #
+# please read the 'READ_ME_FIRST.txt' first				      #
+#									      #
+###############################################################################
+# legend
+#
+# comments have '#' as first word in line
+# format: <key> <value>
+#
+###############################################################################
+#									      #
+# data for the Euler							      #
+#									      #
+###############################################################################
+
+# initial condition
+
+# starting of time
+t0 0.0d0
+
+# value of y at t0
+y0 -0.01d0
+
+# h = delta(t)
+h 0.3d0
+
+# t starting point
+tStart 0.d0
+
+# t ending point
+tEnd 6.d0
+
+# --log and outputs will be added to the respective files--
+# --following variables determine printing in console only--
+# to see the log on Screen make logOnScreen true
+logOnScreen .false.
+
+# to see the output on Screen make outOnScreen true
+outOnScreen .true.
+
+###############################################################################
+#									      #
+# data for the Newton method						      #
+#									      #
+###############################################################################
+
+# error tolerance
+tol 1.0d-6
+
+# max iterations
+maxIt 20
+
+# --log and outputs will be added to the respective files--
+# --following variables determine printing in console only--
+# to print newton iterations on screen
+newtOnScreen .false.
+
+# to print newton iterations in output file
+newtInOut .false.
