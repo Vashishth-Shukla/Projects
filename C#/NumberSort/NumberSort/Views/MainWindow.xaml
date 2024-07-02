@@ -1,0 +1,164 @@
+﻿<Window x:Class="NumberSort.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NumberSort"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="Number Sort" Height="500" Width="800" Background="{StaticResource AppBackground}">
+    <!--Opening Animaiton-->
+    <Window.Resources>
+        <Storyboard x:Key="SlidoOnLoad">
+            <DoubleAnimation Storyboard.TargetProperty="Opacity"
+                         From="0.0" To="1.0" Duration="0:0:1" />
+            <ThicknessAnimation Storyboard.TargetProperty="Margin"
+                            From="0,100,0,0" To="0,0,0,0" Duration="0:0:1">
+                <ThicknessAnimation.EasingFunction>
+                    <CubicEase EasingMode="EaseOut" />
+                </ThicknessAnimation.EasingFunction>
+            </ThicknessAnimation>
+        </Storyboard>
+    </Window.Resources>
+    <!--Main Grid-->
+    <Grid Margin="20" Opacity="1">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        
+        <!--Input display-->
+        <DataGrid
+            Grid.Column="0"
+            ItemsSource="{Binding RawList}"
+            SelectedItem="{Binding SelectedNumber}"
+            Style="{StaticResource StyleDataGrid}">
+            <DataGrid.Columns>
+                <DataGridTextColumn 
+                        Binding="{Binding Value}" 
+                        Header="Raw List" 
+                        Width="100">
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="HorizontalAlignment" Value="Right" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <StackPanel Grid.Column="1">
+
+            <Label Content="Add Numbers :" FontWeight="Bold"/>
+
+
+            <!--Adding number to sort list-->
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" >
+                <Label Content="Add Number : " VerticalAlignment="Center"/>
+                <TextBox Text="{Binding AddNumber, UpdateSourceTrigger=PropertyChanged}"
+                     Width="50" Margin="10" TextAlignment="Right" IsEnabled="{Binding Enables}"/>
+                <Button
+                    Content="Add Number"
+                    Command="{Binding IAddNumber}" 
+                    Style="{StaticResource StandardButton}"
+                    IsEnabled="{Binding Enables}"/>
+
+                <Button
+                    Content="Delete"
+                    VerticalAlignment="Center"
+                    Command="{Binding IDeleteNumber}" 
+                    Style="{StaticResource StandardButton}"
+                    IsEnabled="{Binding Enables}"/>
+            </StackPanel>
+            
+            
+            <!--Random Polulation of the list-->
+            <Label Content="Populate Row List :" VerticalAlignment="Center" FontWeight="Bold"/>
+            <StackPanel Grid.Column="1" Orientation="Horizontal">
+                <Label Content="List length (smaller than 20) :" VerticalAlignment="Center"/>
+                <TextBox Text="{Binding ListLength, UpdateSourceTrigger=PropertyChanged}"
+                         Width="50" Margin="10" 
+                         TextAlignment="Right"
+                         IsEnabled="{Binding Enables}"/>
+                <Button
+                    Content="Poulate Raw List"
+                    Style="{StaticResource StandardButton}"
+                    VerticalAlignment="Center" 
+                    Command="{Binding IPolulateRawList}"
+                    IsEnabled="{Binding Enables}"/>
+            </StackPanel>
+
+            <!--Sort repeat-->
+            <Label Content="Sort" VerticalAlignment="Center" FontWeight="Bold"/>
+            <StackPanel Orientation="Horizontal">
+                <Label Content="Sort Repeat Number : " VerticalAlignment="Center"/>
+                <TextBox Text="{Binding RepeatSortNumber, UpdateSourceTrigger=PropertyChanged}"
+                         Width="100" Margin="10" 
+                         TextAlignment="Right"
+                         IsEnabled="{Binding Enables}"/>
+
+                <Button
+                    Content="Sort"
+                    Command="{Binding ISortList}"
+                    Style="{StaticResource StandardButton}"
+                    IsEnabled="{Binding Enables}"/>
+            </StackPanel>
+            
+            <!--Sort display number-->
+            <Label Content="Show List Number" FontWeight="Bold"/>
+            <StackPanel Grid.Column="1" Orientation="Horizontal">
+                <TextBlock Text="{Binding ShowListNumber, UpdateSourceTrigger=PropertyChanged}"
+                     Width="100" 
+                           TextAlignment="Right" 
+                           Margin="10"
+                           IsEnabled="{Binding Enables}"/>
+                <Button
+                    Content="Rendomize List Display Number"
+                    Command="{Binding IRandomDisplayNumber}"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center" 
+                    Style="{StaticResource StandardButton}"
+                    IsEnabled="{Binding Enables}"/>
+            </StackPanel>
+
+            <!--Time-->
+            <StackPanel Grid.Column="1" Orientation="Horizontal">
+                <Label Content="Elapsed Time :" VerticalAlignment="Center"/>
+                <TextBlock
+                    Text="{Binding ElapsedTime}" Margin="10 0"
+                    VerticalAlignment="Center"/>
+            </StackPanel>
+            <!--Status-->
+            <StackPanel Grid.Column="1" Orientation="Horizontal">
+                <Label Content="Status :" VerticalAlignment="Center"/>
+                <TextBlock 
+                    Text="{Binding StatusMessage}" 
+                    Margin="10 0" 
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Left"/>
+            </StackPanel>
+
+
+        </StackPanel>
+
+        <!--Ouput Display-->
+        <DataGrid
+            Grid.Column="2"
+            ItemsSource="{Binding SortedList}"
+            Style="{StaticResource StyleDataGrid}">
+            <DataGrid.Columns>
+                <DataGridTextColumn 
+                    Header="Sorted List" 
+                    Width="100"
+                    Binding="{Binding .}">
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="HorizontalAlignment" Value="Right" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>

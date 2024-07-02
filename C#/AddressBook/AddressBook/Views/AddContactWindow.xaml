@@ -1,0 +1,22 @@
+﻿<Window x:Class="AddressBook.Views.AddContactWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AddressBook.Views"
+        mc:Ignorable="d"
+        Title="Add Contact" Height="450" Width="400">
+    <Grid>
+        <StackPanel Margin="25">
+            <Label Content="Name:" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+            <TextBox Text="{Binding Name}" Height="20" Width="200"  VerticalAlignment="Top" HorizontalAlignment="Left" BorderThickness="1" />
+            <Label Content="Phone:" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+            <TextBox Text="{Binding Phone}" Height="20" Width="200"  VerticalAlignment="Top" HorizontalAlignment="Left" BorderThickness="1" />
+            <Label Content="Émail:" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+            <TextBox Text="{Binding Email}" Height="20" Width="200"  VerticalAlignment="Top" HorizontalAlignment="Left" BorderThickness="1" />
+            <Label Content="Address:" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+            <TextBox Text="{Binding Address}" Height="20" Width="300"  VerticalAlignment="Top" HorizontalAlignment="Left" BorderThickness="1" />
+        </StackPanel>
+        <Button Command="{Binding IAddContact}" Content="Add Contact" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="0 0 25 25" Padding="25 5"/>
+    </Grid>
+</Window>
