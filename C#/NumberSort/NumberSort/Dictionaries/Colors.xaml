@@ -1,0 +1,9 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    
+    <!--DataGrid Colors-->
+    <SolidColorBrush x:Key="DGBorderBrush" Color="#cdcdcd"/>
+    <SolidColorBrush x:Key="DGAlternatingRowBG" Color="LightBlue"/>
+    <SolidColorBrush x:Key="AppBackground" Color="LightSkyBlue"/>
+
+</ResourceDictionary>
